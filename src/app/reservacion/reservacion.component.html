@@ -1,0 +1,102 @@
+<div class="reservacion-container">
+    <h2 class="titulo">Reservaciones</h2>
+    <button class="btn-asignar-vuelos">Asignar Vuelos</button>
+  
+    <table class="tabla-reservaciones">
+      <thead>
+        <tr>
+          <th>ID Reservación</th>
+          <th>ID Identificación</th>
+          <th>Número de Reservación</th>
+          <th>Número de Vuelo</th>
+          <th>Número de Salida</th>
+          <th>Destino</th>
+          <th>Hora de Salida</th>
+          <th>Hora de Llegada</th>
+          <th>Fecha de Salida</th>
+          <th>Fecha de Llegada</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>1</td>
+          <td>123456</td>
+          <td>ABC123</td>
+          <td>001</td>
+          <td>Destino 1</td>
+          <td>08:00</td>
+          <td>10:00</td>
+          <td>2023-06-04</td>
+          <td>2023-06-04</td>
+          <td>
+            <button class="btn-editar">Editar</button>
+            <button class="btn-eliminar">Eliminar</button>
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>2</td>
+          <td>789012</td>
+          <td>DEF456</td>
+          <td>002</td>
+          <td>Destino 2</td>
+          <td>10:00</td>
+          <td>12:00</td>
+          <td>2023-06-05</td>
+          <td>2023-06-05</td>
+          <td>
+            <button class="btn-editar">Editar</button>
+            <button class="btn-eliminar">Eliminar</button>
+          </td>
+        </tr>
+        <!-- Agregar más filas según los datos obtenidos de la API -->
+      </tbody>
+    </table>
+  
+    <form class="formulario-reservacion">
+      <div class="form-group">
+        <label for="idReservacion">ID Reservación</label>
+        <input type="text" id="idReservacion">
+      </div>
+      <div class="form-group">
+        <label for="idIdentificacion">ID Identificación</label>
+        <input type="text" id="idIdentificacion">
+      </div>
+      <div class="form-group">
+        <label for="numReservacion">Número de Reservación</label>
+        <input type="text" id="numReservacion">
+      </div>
+      <div class="form-group">
+        <label for="numVuelo">Número de Vuelo</label>
+        <input type="text" id="numVuelo">
+      </div>
+      <div class="form-group">
+        <label for="numSalida">Número de Salida</label>
+        <input type="text" id="numSalida">
+      </div>
+      <div class="form-group">
+        <label for="destino">Destino</label>
+        <input type="text" id="destino">
+      </div>
+      <div class="form-group">
+        <label for="horaSalida">Hora de Salida</label>
+        <input type="text" id="horaSalida">
+      </div>
+      <div class="form-group">
+        <label for="horaLlegada">Hora de Llegada</label>
+        <input type="text" id="horaLlegada">
+      </div>
+      <div class="form-group">
+        <label for="fechaSalida">Fecha de Salida</label>
+        <input type="text" id="fechaSalida">
+      </div>
+      <div class="form-group">
+        <label for="fechaLlegada">Fecha de Llegada</label>
+        <input type="text" id="fechaLlegada">
+      </div>
+      <button class="btn-guardar">Guardar</button>
+    </form>
+  </div>
+  

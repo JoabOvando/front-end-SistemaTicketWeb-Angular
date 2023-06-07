@@ -1,0 +1,63 @@
+<div class="persona-container">
+    <h2 class="titulo">Las Personas</h2>
+  
+    <button class="btn-asignar-vuelos">Asignar Vuelos</button>
+  
+    <table class="tabla-personas">
+      <thead>
+        <tr>
+          <th>ID Identificación</th>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>Fecha de Nacimiento</th>
+          <th>Lugar de Nacimiento</th>
+          <th>Título de Persona</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let persona of personas">
+          <td>{{ persona.idIdentificacion }}</td>
+          <td>{{ persona.nombre }}</td>
+          <td>{{ persona.apellido }}</td>
+          <td>{{ persona.fechaNacimiento }}</td>
+          <td>{{ persona.lugarNacimiento }}</td>
+          <td>{{ persona.tituloPersona }}</td>
+          <td>
+            <!-- Botones para editar o eliminar -->
+            <button class="btn-editar" (click)="editarPersona(persona)">Editar</button>
+            <button class="btn-eliminar" (click)="eliminarPersona(persona)">Eliminar</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <form (ngSubmit)="guardarPersona()" class="formulario-persona">
+      <div class="form-group">
+        <label for="idIdentificacion">ID Identificación</label>
+        <input type="text" id="idIdentificacion" [(ngModel)]="nuevaPersona.idIdentificacion" name="idIdentificacion" required>
+      </div>
+      <div class="form-group">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" [(ngModel)]="nuevaPersona.nombre" name="nombre" required>
+      </div>
+      <div class="form-group">
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" [(ngModel)]="nuevaPersona.apellido" name="apellido" required>
+      </div>
+      <div class="form-group">
+        <label for="fechaNacimiento">Fecha de Nacimiento</label>
+        <input type="text" id="fechaNacimiento" [(ngModel)]="nuevaPersona.fechaNacimiento" name="fechaNacimiento" required>
+      </div>
+      <div class="form-group">
+        <label for="lugarNacimiento">Lugar de Nacimiento</label>
+        <input type="text" id="lugarNacimiento" [(ngModel)]="nuevaPersona.lugarNacimiento" name="lugarNacimiento" required>
+      </div>
+      <div class="form-group">
+        <label for="tituloPersona">Título de Persona</label>
+        <input type="text" id="tituloPersona" [(ngModel)]="nuevaPersona.tituloPersona" name="tituloPersona" required>
+      </div>
+      <button type="submit" class="btn-guardar">Guardar Persona</button>
+    </form>
+  </div>
+  

@@ -1,0 +1,38 @@
+<div class="vuelo-container">
+    
+    
+  
+    <form (ngSubmit)="guardarVuelo()" class="formulario-vuelo">
+        <h2>Insertar Vuelos</h2>
+      <div class="form-group">
+        <label for="idVuelo">ID Vuelo</label>
+        <input type="text" id="idVuelo" [(ngModel)]="nuevoVuelo.idVuelo" name="idVuelo" required>
+      </div>
+      <div class="form-group">
+        <label for="idReservacion">ID Reservación</label>
+        <input type="text" id="idReservacion" [(ngModel)]="nuevoVuelo.idReservacion" name="idReservacion" required>
+      </div>
+      <div class="form-group">
+        <label for="idIdentificacion">ID Identificación</label>
+        <input type="text" id="idIdentificacion" [(ngModel)]="nuevoVuelo.idIdentificacion" name="idIdentificacion" required>
+      </div>
+      <div class="form-group">
+        <label for="asiento">Asiento</label>
+        <input type="text" id="asiento" [(ngModel)]="nuevoVuelo.asiento" name="asiento" required>
+      </div>
+      <div class="form-group">
+        <label for="horaAbordaje">Hora de abordaje</label>
+        <input type="text" id="horaAbordaje" [(ngModel)]="nuevoVuelo.horaAbordaje" name="horaAbordaje" required>
+      </div>
+      <div class="form-group">
+        <label for="tiempoVuelo">Tiempo de vuelo</label>
+        <input type="text" id="tiempoVuelo" [(ngModel)]="nuevoVuelo.tiempoVuelo" name="tiempoVuelo" required>
+      </div>
+      <div class="form-group">
+        <label for="noTicket">No. de ticket</label>
+        <input type="text" id="noTicket" [(ngModel)]="nuevoVuelo.noTicket" name="noTicket" required>
+      </div>
+      <button type="submit" class="btn-guardar">Guardar Vuelo</button>
+    </form>
+  </div>
+  

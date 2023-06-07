@@ -1,0 +1,88 @@
+<div class="equipaje-container">
+    <h2 class="titulo">Equipaje</h2>
+    <button class="btn-asignar-vuelos">Asignar Vuelos</button>
+  
+    <table class="tabla-equipaje">
+      <thead>
+        <tr>
+          <th>ID Equipaje</th>
+          <th>ID Vuelo</th>
+          <th>ID Reservación</th>
+          <th>ID Identificación</th>
+          <th>Número de Equipaje</th>
+          <th>Peso de Equipaje</th>
+          <th>Validación</th>
+          <th>Hora de Reservación</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>E001</td>
+          <td>20</td>
+          <td>Validado</td>
+          <td>2023-06-04 14:30</td>
+          <td>
+            <button class="btn-editar">Editar</button>
+            <button class="btn-eliminar">Eliminar</button>
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>1</td>
+          <td>2</td>
+          <td>2</td>
+          <td>E002</td>
+          <td>15</td>
+          <td>Pendiente</td>
+          <td>2023-06-05 10:00</td>
+          <td>
+            <button class="btn-editar">Editar</button>
+            <button class="btn-eliminar">Eliminar</button>
+          </td>
+        </tr>
+        <!-- Agregar más filas según los datos obtenidos de la API -->
+      </tbody>
+    </table>
+  
+    <form class="formulario-equipaje">
+      <div class="form-group">
+        <label for="idEquipaje">ID Equipaje</label>
+        <input type="text" id="idEquipaje">
+      </div>
+      <div class="form-group">
+        <label for="idVuelo">ID Vuelo</label>
+        <input type="text" id="idVuelo">
+      </div>
+      <div class="form-group">
+        <label for="idReservacion">ID Reservación</label>
+        <input type="text" id="idReservacion">
+      </div>
+      <div class="form-group">
+        <label for="idIdentificacion">ID Identificación</label>
+        <input type="text" id="idIdentificacion">
+      </div>
+      <div class="form-group">
+        <label for="noEquipaje">Número de Equipaje</label>
+        <input type="text" id="noEquipaje">
+      </div>
+      <div class="form-group">
+        <label for="pesoEquipaje">Peso de Equipaje</label>
+        <input type="text" id="pesoEquipaje">
+      </div>
+      <div class="form-group">
+        <label for="validacion">Validación</label>
+        <input type="text" id="validacion">
+      </div>
+      <div class="form-group">
+        <label for="horaReservacion">Hora de Reservación</label>
+        <input type="text" id="horaReservacion">
+      </div>
+      <button class="btn-guardar">Guardar</button>
+    </form>
+  </div>
+  

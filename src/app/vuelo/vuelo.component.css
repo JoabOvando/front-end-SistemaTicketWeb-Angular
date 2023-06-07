@@ -1,0 +1,64 @@
+/* vuelo.component.css */
+.vuelo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .btn-asignar {
+    padding: 10px 20px;
+    background-color: #098afb;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .tabla-vuelos {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f0f7ff;
+  }
+  
+  .tabla-vuelos th,
+  .tabla-vuelos td {
+    padding: 10px;
+    border: 1px solid #c6c6c6;
+  }
+  
+  .tabla-vuelos th {
+    background-color: #e4efff;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .tabla-vuelos td {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .btn-editar {
+    padding: 5px 10px;
+    background-color: #fcd000;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+    margin-right: 5px;
+  }
+  
+  .btn-eliminar {
+    padding: 5px 10px;
+    background-color: #f53636;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #fff;
+  }
+  
